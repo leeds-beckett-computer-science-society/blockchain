@@ -33,6 +33,7 @@ class Blockchain:
         self.create_block(proof=1, previous_hash='0')
 
     # pass in values we need for a block
+    # create genesis block
 
     def create_block(self, proof, previous_hash):
         block = {'index': len(self.chain) + 1,
